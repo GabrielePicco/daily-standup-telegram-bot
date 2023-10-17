@@ -1,4 +1,4 @@
-# 🚀 Telegram for GitHub Actions
+# 🚀 Telegram for GitHub Actions - Daily Standup
 
 [GitHub Action](https://github.com/features/actions) for sending a Telegram notification message.
 
