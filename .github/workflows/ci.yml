@@ -1,5 +1,8 @@
-name: Daily Standup
-on: [push]
+name: Magicblock Daily Standup
+on:
+  schedule:
+    - cron: '0 7 * * *'
+    
 jobs:
 
   build:
@@ -8,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
 
-    - name: send message file
+    - name: send standup message from file template
       uses: ./
       with:
         to: ${{ secrets.TELEGRAM_TO }}
