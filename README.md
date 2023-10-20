@@ -4,7 +4,7 @@
 
 ![notification](./images/telegram-notification.png)
 
-[![Actions Status](https://github.com/appleboy/telegram-action/workflows/telegram%20message/badge.svg)](https://github.com/appleboy/telegram-action/actions)
+[![Actions Status](https://github.com/GabrielePicco/daily-standup-telegram-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/GabrielePicco/daily-standup-telegram-bot/actions/workflows/ci.yml)
 
 ## Usage
 
