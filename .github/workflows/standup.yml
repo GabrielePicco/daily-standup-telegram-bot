@@ -1,0 +1,19 @@
+name: Magicblock Bi-weekly Standup
+on:
+  schedule:
+    - cron: '0 10 * * 1,3'
+    
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+
+    - name: send standup message from file template
+      uses: ./
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message_file: standup_call.txt
